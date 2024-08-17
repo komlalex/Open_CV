@@ -18,6 +18,7 @@ def mouse_callback(event, x, y, flags, param):
 cv2.namedWindow("Image")
 cv2.setMouseCallback("Image", mouse_callback)
 
+
 # Create a blank image
 img = np.zeros([512, 512, 3], np.uint8)
 img = cv2.imread("Image", img)
