@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("./my_images/apple.jpg")
+img = cv2.imread("./my_images/apple.jpg", 0)
+
 
 # Define kernel
 kernel = np.ones((5, 5), np.uint8)
