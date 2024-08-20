@@ -69,8 +69,7 @@ while True:
             # exit on 'q' press
             if cv2.waitKey(1) == ord("q"):
                 break
-        except ValueError:
-            print("Failed")
+        except:
             pass
     else:
         break
