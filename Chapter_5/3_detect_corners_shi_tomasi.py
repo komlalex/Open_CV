@@ -15,6 +15,7 @@ quality_level = 0.3
 min_distance = 7
 block_size = 7
 
+
 # Apply Shi-Tomasi Corner Detector
 corners = cv2.goodFeaturesToTrack(gray, max_corners, quality_level, min_distance, blockSize=block_size)
 
