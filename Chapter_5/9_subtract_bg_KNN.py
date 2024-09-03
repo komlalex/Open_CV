@@ -3,7 +3,7 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 # Create a BackgroundSubtractorKNN object
-bg_subtractor = cv2.createBackgroundSubtractorKNN()
+bg_subtractor = cv2.createBackgroundSubtractorKNN(history=200, dist2Threshold=100, detectShadows=True)
 
 while True:
     ret, frame = cap.read()
